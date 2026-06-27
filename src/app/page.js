@@ -12,7 +12,7 @@ export default function Home() {
         <div className="product-list">
           <ul>
             <li>
-              <Link href="/AspectRatioCalculator">
+              <Link href="/aspectRatioCalculator">
               <div className="card">
                 <Image src={aspectRatio} alt="image aspect ratio" />
                 <div className="product-detail">

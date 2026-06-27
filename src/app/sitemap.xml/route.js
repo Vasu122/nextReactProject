@@ -1,7 +1,7 @@
 // app/sitemap.xml/route.js ya app/sitemap.js
 
 export async function GET() {
-  const baseUrl = process.env.APP_URL || "https://scan.techtipsall.com";
+  const baseUrl = process.env.APP_URL || "https://next-react-project-orcin.vercel.app";
 
   const languages = ["en", "es"];
   const staticPages = [

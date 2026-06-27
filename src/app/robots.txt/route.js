@@ -1,6 +1,6 @@
 export async function GET() {
   // Agar env variable nahi mila, toh backup me direct link utha lega
-  const baseUrl = process.env.APP_URL || "https://scan.techtipsall.com";
+  const baseUrl = process.env.APP_URL || "https://next-react-project-orcin.vercel.app";
   
   const content = `User-agent: *
 Allow: /
