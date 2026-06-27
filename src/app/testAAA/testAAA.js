@@ -45,8 +45,7 @@ export const TestAAA = () => {
                 <h2>Test 6: Image-recognition CAPTCHA (FAIL WCAG 2.2 AAA · 3.3.9)</h2>
                 <form>
                     <p>Sign in verification:</p>
-                    <Image src="https://via.placeholder.com/300x100.png?text=Select+all+traffic+lights"
-                        alt="Select all traffic lights in the image to continue" />
+                  
                         <button type="submit">Verify I'm human</button>
                 </form>
             </div>
@@ -123,7 +122,7 @@ export const TestAAA = () => {
             {/* <!-- ❌ FAIL: 1.4.9 Images of Text No Exception (stricter AAA) --> */}
             <div className="test-block">
                 <h2>Test 16: Image of text — AAA stricter than AA (FAIL 1.4.9)</h2>
-                <Image src="https://via.placeholder.com/400x80.png?text=Special+Offer+Today" alt="Special Offer Today" />
+                
                     {/* <!-- AAA forbids text-in-image entirely except for logos --> */}
             </div>
 

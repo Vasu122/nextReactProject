@@ -146,7 +146,7 @@ export const TestAA = () => {
             {/* <!-- ❌ FAIL: 1.4.5 Images of Text — text inside image alt='' attempts to circumvent --> */}
             <div className="test-block">
                 <h2>Test 16: Image of text (manual — FAIL 1.4.5 AA)</h2>
-                <Image src="https://via.placeholder.com/300x60.png?text=Sign+Up+Now" alt="Sign Up Now" />
+                
                 {/* <!-- Text inside graphics should be real HTML text --> */}
             </div>
 

@@ -6,7 +6,6 @@ export async function GET() {
   const languages = ["en", "es"];
   const staticPages = [
     "",
-    "escaperandbeautify",
     "contactUs",
     "aboutUs",
     "testAAA",

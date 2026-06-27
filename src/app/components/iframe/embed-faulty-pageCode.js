@@ -3,12 +3,12 @@
 import Image from "next/image";
 import React from "react";
 
-export const EmbedFaultyPage = () => {
+export const EmbedFaultyPageCode = () => {
     return (
         <>
             <h3>Form Submission Section</h3>
 
-            <Image src="./assets/img/services.jpg" width="300" height="150" alt="submission" />
+          
 
                 <p className="low-contrast"> 
                     This is a very low contrast text that visually impaired users cannot read.

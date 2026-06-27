@@ -24,11 +24,6 @@ export default function Header() {
           </div>
           <nav>
             <div className="pill-nav">
-              <Link href="/aspectRatioCalculator">
-                {" "}
-                Aspect Ratio Calculator
-              </Link>
-              <Link href="/escaperandbeautify"> escaper and beautify </Link>
               <Link href="/contactUs"> Contact Us </Link>
               <Link href="/aboutUs"> About Us </Link>
               <Link href="/testAAA"> Test AAA </Link>
