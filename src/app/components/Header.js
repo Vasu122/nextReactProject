@@ -19,7 +19,7 @@ export default function Header() {
         <div className="header-inner">
           <div className="logo-container">
             <Link href="/">
-            <Image src={logo} alt="free tools" />
+            <Image src={logo} alt="free tools" priority />
             </Link>
           </div>
           <nav>
