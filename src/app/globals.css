@@ -1,0 +1,339 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+.aspectRatio {
+  margin: 0 auto;
+}
+
+.aspect-Bg {
+  background-color: RGB(255, 98, 45);
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px RGB(255, 98, 45);
+  border: 5px solid RGB(255, 98, 45);
+  color: #fff;
+}
+
+.aspectRatio h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+.aspectRatio .preset-group {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.aspectRatio button {
+  padding: 10px;
+  background-color: #f1f1f1;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 48%;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.aspectRatio .preset-group-input {
+  display: flex;
+  align-items: center;
+}
+
+.aspectRatio .preset-group-input .colonSign {
+  margin: 0 15px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.aspectRatio button:hover,
+.aspectRatio button.active {
+  background-color: #215ed9;
+  color: #ffffff;
+}
+
+
+.aspectRatio .input-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.aspectRatio input {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.aspectRatio label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.dimension-width {
+  position: relative;
+}
+
+.dimension-width button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 0 10px;
+  width: auto !important;
+  margin: 0 0;
+  border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+button,
+input[type="file"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="file"] {
+  background-color: #2196F3;
+  color: white;
+}
+
+
+
+/*
+Header code here
+*/
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .11);
+  transition: all 0.5s linear;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100px;
+  padding-top: 30px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Style the links inside the pill navigation menu */
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 0;
+  padding-bottom: 15px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s linear;
+  margin: 0 15px;
+  text-transform: capitalize;
+}
+
+/* Change the color of links on mouse-over */
+.pill-nav a:hover {
+  color: black;
+  border-bottom: 2px solid #215ed9;
+}
+
+/* Add a color to the active/current link */
+.pill-nav a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.header-inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 70px;
+  justify-content: space-between;
+}
+
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* home page */
+.home-inner ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-inner ul li {
+  width: 32%;
+  margin-bottom: 30px;
+}
+
+.home-inner ul li a {
+  color: #000000;
+  transition: all 0.3s linear;
+  text-decoration: none;
+}
+
+.home-inner ul li a:hover {
+  color: #000000;
+  transition: all 0.3s linear;
+  text-decoration: underline;
+}
+
+.product-detail {
+  padding: 0 15px 15px;
+}
+
+.product-detail h4 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.product-detail p {
+  font-size: 16px;
+  line-height: 24px;
+  height: 48px;
+}
+
+.home-inner ul li img {
+  width: 100%;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.delBtn {
+  background: #b91c1c;
+  color: #fff;
+}
+
+.flashing {
+  background: #ff0;
+  width: 100px;
+  height: 100px;
+  padding: 8px;
+}
+
+.reflow {
+  width: 1400px;
+  background: #fee;
+  padding: 12px;
+}
+
+.faintBorder {
+  border: 1px solid #eee;
+  background: #fff;
+}
+
+.helpPara {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+.skip-content {
+  position: absolute;
+  left: -9999px;
+}
+
+.low-contrast {
+  background: #ffffff;
+  color: #e0e0e0;
+  font-size: 14px;
+}
