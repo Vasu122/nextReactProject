@@ -1,5 +1,3 @@
-// app/sitemap.xml/route.js ya app/sitemap.js
-
 export async function GET() {
   const baseUrl = process.env.APP_URL || "https://next-react-project-orcin.vercel.app";
 
@@ -15,14 +13,17 @@ export async function GET() {
   ];
 
   const urls = [];
-  const currentDate = new Date().toISOString().split('T')[0]; // Din ki sahi format me date
+  // Aaj ki date XML format me (YYYY-MM-DD)
+  const currentDate = new Date().toISOString().split('T')[0];
 
+  // Saare languages aur pages ke URLs loop karke generate karna
   for (const lang of languages) {
     for (const page of staticPages) {
-      urls.push(`${baseUrl}/${page ? "/" + page : ""}`);
+      urls.push(`${baseUrl}/${lang}${page ? "/" + page : ""}`);
     }
   }
 
+  // Pure XML string generation
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls
@@ -31,7 +32,7 @@ ${urls
     <loc>${url}</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq> 
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>`
       )
       .join("\n")}
