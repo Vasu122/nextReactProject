@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import React from "react"
 
 export const TestAA = () => {
@@ -49,9 +50,9 @@ export const TestAA = () => {
             {/* <!-- ❌ FAIL: 2.5.8 (NEW 2.2) — Target Size Minimum + Sprint 1 NEW WCAG 2.2 --> */}
             <div className="test-block">
                 <h2>Test 6: Tiny target size (FAIL WCAG 2.2 AA · 2.5.8)</h2>
-                <button className="tiny-target">×</button>
-                <button className="tiny-target">↑</button>
-                <button className="tiny-target">↓</button>
+                <button className="tiny-target">X</button>
+                <button className="tiny-target">|</button>
+                <button className="tiny-target">$</button>
             </div>
 
             {/* <!-- ❌ FAIL: 2.5.7 (NEW 2.2) — Dragging without alternative --> */}
@@ -145,7 +146,7 @@ export const TestAA = () => {
             {/* <!-- ❌ FAIL: 1.4.5 Images of Text — text inside image alt='' attempts to circumvent --> */}
             <div className="test-block">
                 <h2>Test 16: Image of text (manual — FAIL 1.4.5 AA)</h2>
-                <img src="https://via.placeholder.com/300x60.png?text=Sign+Up+Now" alt="Sign Up Now" />
+                <Image src="https://via.placeholder.com/300x60.png?text=Sign+Up+Now" alt="Sign Up Now" />
                 {/* <!-- Text inside graphics should be real HTML text --> */}
             </div>
 

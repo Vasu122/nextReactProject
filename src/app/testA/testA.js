@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import React from "react"
 
 export const TestA = () => {
@@ -7,21 +8,21 @@ export const TestA = () => {
         <>
             <div className="test-block">
                 <h2>Test 1: Image without alt (FAIL 1.1.1)</h2>
-                <img src="https://via.placeholder.com/150" width="150" height="150" />
+                <Image src="https://via.placeholder.com/150" width="150" height="150" alt="fisrt" />
             </div>
 
             {/* <!-- ✅ PASS: 1.1.1 — img with alt --> */}
             <div className="test-block">
                 <h2>Test 2: Image with alt (PASS)</h2>
-                <img src="https://via.placeholder.com/150" alt="Placeholder graphic showing 150 by 150 box" width="150" height="150" />
+                <Image src="https://via.placeholder.com/150" alt="Placeholder graphic showing 150 by 150 box" width="150" height="150" />
             </div>
 
             {/* <!-- ✅ PASS: 1.1.1 — decorative img with role=presentation (Sprint 1 Fix #2) --> */}
             <div className="test-block">
                 <h2>Test 3: Decorative image — role=presentation (PASS — no alt needed)</h2>
-                <img src="https://via.placeholder.com/50" role="presentation" width="50" height="50" />
-                <img src="https://via.placeholder.com/50" aria-hidden="true" width="50" height="50" />
-                <img src="https://via.placeholder.com/50" role="none" width="50" height="50" />
+                <Image src="https://via.placeholder.com/50" role="presentation" width="50" height="50" alt="presrr" />
+                <Image src="https://via.placeholder.com/50" aria-hidden="true" width="50" height="50" alt="presrr1"/>
+                <Image src="https://via.placeholder.com/50" role="none" width="50" height="50" alt="presrr3"/>
             </div>
 
             {/* <!-- ❌ FAIL: 4.1.2 Name Role Value — button with no accessible name --> */}

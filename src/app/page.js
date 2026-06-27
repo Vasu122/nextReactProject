@@ -37,8 +37,6 @@ export default function Home() {
               </div>
               </Link>
             </li>
-
-          
           </ul>
         </div>
       </main>
