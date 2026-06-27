@@ -5,7 +5,7 @@ export default function sitemap() {
         url: '/',
         lastModified: new Date(),
         changeFrequency: 'yearly',
-        priority: 1,
+        priority: 1, 
       },
       {
         url: `${baseUrl}/AspectRatioCalculator`,
