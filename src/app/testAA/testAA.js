@@ -152,7 +152,7 @@ export const TestAA = () => {
 
             {/* <!-- Help link in BOTTOM-RIGHT zone — Consistent Help test for cross-page --> */}
             <div className="helpPara">
-                <a href="/help">Help</a>
+              j;ojojoj
             </div>
 
         </>

@@ -12,6 +12,7 @@ export const EmbedFaultyPageCode = () => {
 
                 <p className="low-contrast"> 
                     This is a very low contrast text that visually impaired users cannot read.
+                    https://next-react-project-orcin.vercel.app/iframeTest
                 </p>
 
                 <form>
@@ -22,10 +23,11 @@ export const EmbedFaultyPageCode = () => {
 
                     <input type="password" id="pass" aria-describedby="non-existent-error-id" />
 
-                    <a href="/terms">Click here</a>
-                    <button type="submit"></button> </form>
+                   
+                    <button type="submit"></button> 
+                </form>
 
-                <a href=""></a>
+                
                 <div className="backg">
                     Hi i m rabindra singh , currently i am checking color contrast issues.
                 </div>

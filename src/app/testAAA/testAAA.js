@@ -75,8 +75,8 @@ export const TestAAA = () => {
             {/* <!-- ❌ FAIL: 2.4.9 Link Purpose (Link Only) — generic link text --> */}
             <div className="test-block">
                 <h2>Test 10: Link text not descriptive standalone (FAIL 2.4.9 AAA)</h2>
-                <p>For more information about our pricing, please <a href="/pricing">view details</a>.</p>
-                <p>To learn more about features, <a href="/features">click here</a>.</p>
+                <p>For more information about our pricing, please </p>
+                <p>To learn more about features, </p>
             </div>
 
             {/* <!-- ❌ FAIL: 3.1.3 Unusual Words — jargon without definition --> */}
@@ -95,8 +95,8 @@ export const TestAAA = () => {
             {/* <!-- ❌ FAIL: 3.2.5 Change on Request — new tab without warning --> */}
             <div className="test-block">
                 <h2>Test 13: Links opening new tabs without warning (FAIL 3.2.5 AAA)</h2>
-                <p><a href="https://wcag.com" target="_blank">External documentation</a></p>
-                <p><a href="https://github.com" target="_blank">View on GitHub</a></p>
+                <p>fwfewfe</p>
+                <p>qfwwfwf</p>
                 {/* <!-- No "opens in new tab" indication --> */}
             </div>
 

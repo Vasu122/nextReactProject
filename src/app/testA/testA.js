@@ -42,22 +42,20 @@ export const TestA = () => {
             {/* <!-- ❌ FAIL: 2.4.4 Link Purpose — empty link --> */}
             <div className="test-block">
                 <h2>Test 6: Empty link (FAIL 2.4.4)</h2>
-                <a href="/about"></a>
+                
             </div>
 
             {/* <!-- ❌ FAIL: 2.4.4 — Generic link text --> */}
             <div className="test-block">
                 <h2>Test 7: Generic link text "Click here" (FAIL 2.4.4)</h2>
-                <p>For more information, <a href="/about">click here</a>.</p>
-                <p>Want to learn more? <a href="/products">read more</a></p>
+                <p>For more information, .</p>
+                <p>Want to learn more? </p>
             </div>
 
             {/* <!-- ✅ PASS: 2.4.4 — Generic visible text overridden by descriptive aria-label (Sprint 1 Fix #3) --> */}
             <div className="test-block">
                 <h2>Test 8: Generic text with aria-label override (PASS)</h2>
-                <a href="/article/12" aria-label="Read full article: Accessibility Best Practices 2025">
-                    Read more
-                </a>
+                
             </div>
 
             {/* <!-- ❌ FAIL: 3.3.2 Labels or Instructions — input without label --> */}
@@ -152,13 +150,13 @@ export const TestA = () => {
             {/* <!-- Footer with broken anchor link --> */}
             <div className="test-block">
                 <h2>Test 19: Broken same-page anchor (FAIL 2.4.1)</h2>
-                <a href="#non-existent-section">Jump to section that doesn't exist</a>
+               
             </div>
 
             {/* <!-- Footer with href="#" dead link --> */}
             <div className="test-block">
                 <h2>Test 20: Dead href="#" link (FAIL 2.4.4)</h2>
-                <a href="#">Dead link with no destination</a>
+                
             </div>
 
         </>
